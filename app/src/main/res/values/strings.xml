@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quote App</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="button">Get Quote</string>
+    <string name="press_for_quote">Press here</string>
+    <string name="quote_of_the_day">Quote of the day!</string>
+    <string name="get_quote_of_today">Press to get the quote of the day!</string>
+    <string name="cool_string">Some cool quote!</string>
+    <string name="go_back_for_new_quote">Go back for a new quote</string>
+
+
+</resources>
