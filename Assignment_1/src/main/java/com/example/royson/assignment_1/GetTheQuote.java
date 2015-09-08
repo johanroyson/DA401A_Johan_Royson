@@ -27,6 +27,7 @@ public class GetTheQuote extends Fragment{
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 SeeTheQuote seeTheQuote = new SeeTheQuote();
                 fragmentTransaction.replace(R.id.fragment_container, seeTheQuote);
+                fragmentTransaction.addToBackStack("hej");
                 fragmentTransaction.commit();
 
 
