@@ -1,9 +1,10 @@
 package com.example.royson.assignment_1;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(activity_main);
         Log.i("MainActivity", "onCreate");
 
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         final GetTheQuote getTheQuote = new GetTheQuote();
         fragmentTransaction.add(R.id.fragment_container, getTheQuote);
