@@ -1,4 +1,4 @@
-package com.example.royson.myapplication;
+package com.example.royson.assignment_2;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

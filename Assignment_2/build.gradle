@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0"
 
     defaultConfig {
-        applicationId "com.example.royson.myapplication"
+        applicationId "com.example.royson.assignment_2"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
