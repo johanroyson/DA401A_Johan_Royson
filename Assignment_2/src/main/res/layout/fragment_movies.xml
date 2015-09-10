@@ -8,7 +8,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/movies_view"
-        android:layout_gravity="start|top" />
+        android:layout_gravity="start|top"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"/>
 
 
 </LinearLayout>
