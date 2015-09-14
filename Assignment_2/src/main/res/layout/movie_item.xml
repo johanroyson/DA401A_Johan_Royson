@@ -4,23 +4,39 @@
     android:layout_height="match_parent">
 
 
-
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="245dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/the_poster"/>
-
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/the_title"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/the_poster"
+        android:adjustViewBounds="true"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:id="@+id/the_year"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#5000"
+        android:padding="5sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/the_title"
+            android:textColor="#ededfa"
+            android:layout_marginLeft="10sp"
+            android:layout_marginStart="1dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/the_year"
+            android:textColor="#ededfa"
+            android:layout_marginLeft="10sp"
+            android:layout_marginStart="1dp"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

@@ -7,19 +7,18 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class MovieAdapter extends BaseAdapter {
 
-    ArrayList<Movie> mMovieList;
+    List<Movie> mMovieList;
     LayoutInflater mLayoutInflater;
 
-    public MovieAdapter(ArrayList<Movie> cMovieList, LayoutInflater cLayoutInflater){
+    public MovieAdapter(List<Movie> mMovieList, LayoutInflater mLayoutInflater){
 
-        this.mLayoutInflater = cLayoutInflater;
-        this.mMovieList = cMovieList;
+        this.mLayoutInflater = mLayoutInflater;
+        this.mMovieList = mMovieList;
 
     }
 
@@ -43,18 +42,18 @@ public class MovieAdapter extends BaseAdapter {
 
         Log.i("MovieAdapter", "GetView");
 
+
         convertView = mLayoutInflater.inflate(R.layout.movie_item, parent, false);
-
         Movie movie = (Movie) getItem(position);
-
-        ImageView poster_ImageView = (ImageView) convertView.findViewById(R.id.the_poster);
-        poster_ImageView.setImageResource(movie.poster);
 
         TextView title_TextView = (TextView) convertView.findViewById(R.id.the_title);
         title_TextView.setText(movie.title);
 
         TextView Year_TextView = (TextView) convertView.findViewById(R.id.the_year);
         Year_TextView.setText(movie.year);
+
+        ImageView poster_ImageView = (ImageView) convertView.findViewById(R.id.the_poster);
+        poster_ImageView.setImageResource(movie.poster);
 
 
 

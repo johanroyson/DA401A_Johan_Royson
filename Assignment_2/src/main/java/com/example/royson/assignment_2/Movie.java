@@ -1,9 +1,7 @@
 package com.example.royson.assignment_2;
 
 
-/**
- * Created by Royson on 2015-09-09.
- */
+
 public class Movie {
 
     public String title;
